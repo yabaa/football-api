@@ -19,7 +19,7 @@ CREATE TABLE game (
   id UUID  NOT NULL,
   outside_team_id UUID,
   home_team_id UUID,
-  start_date DATE,
+  start_date DATE NOT NULL,
   CONSTRAINT game_pkey PRIMARY KEY (id),
   CONSTRAINT fk_game_1 FOREIGN KEY (outside_team_id) REFERENCES team (id) MATCH SIMPLE,
   CONSTRAINT fk_game_2 FOREIGN KEY (home_team_id) REFERENCES team (id) MATCH SIMPLE,
