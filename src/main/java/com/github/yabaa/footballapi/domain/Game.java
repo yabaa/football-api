@@ -24,11 +24,11 @@ public class Game {
     private UUID id;
 
     @OneToOne
-    @JoinColumn(name = "teamId")
+    @JoinColumn(name = "outsideTeamId", insertable = false, updatable = false)
     private Team outsideTeam;
 
     @OneToOne
-    @JoinColumn(name = "teamId")
+    @JoinColumn(name = "homeTeamId", insertable = false, updatable = false)
     private Team homeTeam;
 
     @NotNull

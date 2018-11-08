@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
+@EntityScan(basePackages = "com.github.yabaa.footballapi.domain")
 public class Application {
 
 	public static final String BASE_API_PATH = "/api";

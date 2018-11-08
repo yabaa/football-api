@@ -28,7 +28,7 @@ public class SwaggerConfig {
     private static final String VERSION = "1.0";
     /* Contact Info */
     private static final String CONTACT = "yabaa@github.com";
-    private static final String NAME = "YaBaa";
+    private static final String NAME = "Yahya Baassou";
     private static final String WEBSITE = "http://yabaa.github.io";
     /* Protocol */
     private static final String HTTP_PROTOCOL = "http";

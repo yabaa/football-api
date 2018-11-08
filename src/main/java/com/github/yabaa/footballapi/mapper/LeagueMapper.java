@@ -11,13 +11,14 @@ import java.util.Set;
 @Mapper(componentModel = "spring")
 public interface LeagueMapper {
 
+    @Mapping(source = "country", target = "country")
     League dtoToEntity(LeagueDto source);
 
     LeagueDto entityToDto(League source);
 
     Set<LeagueDto> entitiesToDtos(Set<League> sources);
 
-    @Mapping(target = "id", ignore = true)
+    //    @Mapping(target = "id", ignore = true)
     League update(League source, @MappingTarget League target);
 
 }

@@ -25,8 +25,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Slf4j
 public class LeagueController {
 
-    private static final String API_NAME_CA = "leagues";
-    static final String API_PATH = BASE_API_V1_PATH + API_NAME_CA;
+    private static final String API_NAME = "/leagues";
+    static final String API_PATH = BASE_API_V1_PATH + API_NAME;
 
     private final LeagueService leagueService;
     private final LeagueMapper leagueMapper;

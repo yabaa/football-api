@@ -4,7 +4,7 @@ import com.github.yabaa.footballapi.domain.Game;
 import com.github.yabaa.footballapi.dto.GameDto;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = TeamMapper.class)
 public interface GameMapper {
 
     Game dtoToEntity(GameDto source);
